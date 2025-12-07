@@ -1,0 +1,347 @@
+import type {
+  Project,
+  Experience,
+  SkillCategory,
+  PersonalInfo,
+  NavLink,
+} from "../types/portfolio.types";
+import { skillIcons } from "../constants/icons";
+
+export const personalInfo: PersonalInfo = {
+  name: "BISHER MUHAMMAD ZIAD ALHASANI ALJAZAERI",
+  title: "Flutter Developer • Software Engineer",
+  bio: [
+    "Results-driven Software Engineer and Flutter Developer with over 3 years of experience in building high-quality cross-platform mobile applications and web solutions.",
+    "Proficient in Flutter, Dart, React, and API integrations, with expertise in state management, UI/UX, and clean architecture. Adept at leading cross-functional teams, optimizing app performance, and delivering scalable, high-quality solutions.",
+    "Passionate about building user-centric applications and leveraging Agile methodologies to enhance development efficiency.",
+  ],
+  email: "bisher.hasani@gmail.com",
+  phone: "+963 939202488",
+  location: "Damascus, Syria",
+  linkedin: "https://www.linkedin.com/in/bisher-al-hasani-19008a219/",
+  github: undefined,
+  resumePath: "/src/assets/files/eng_bisher_alhasani.pdf",
+};
+
+export const navLinks: NavLink[] = [
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Education", href: "#education" },
+  { label: "Contact", href: "#contact" },
+];
+
+export const projects: Project[] = [
+  {
+    title: "Pyramind",
+    company: "Pharaon",
+    date: "04/2025 - Present",
+    description:
+      "Led the analysis and planning of the project, defining clear requirements, user stories, and acceptance criteria to align development with business goals Managed the development process using the Scrum framework, facilitating sprint planning, daily stand-ups, reviews, and retrospectives to ensure continuous progress and team collaboration.Coordinated cross-functional teams and stakeholders, tracking progress through agile tools and ensuring timely delivery of high-quality features..",
+    image: "/src/assets/images/pyramind.png",
+    playStore: null,
+    appStore: null,
+    website: null,
+    current: true,
+  },
+  {
+    title: "Damen",
+    company: "Ikoniks",
+    date: "11/2023 - 10/2024",
+    description:
+      "Developed two mobile applications connecting users with building service professionals, such as contractors, architects, and engineers.Designed and integrated a real- time chat feature, enabling seamless communication between users and service providers.Enhanced the user experience and interface, ensuring intuitive navigation and engagement.",
+    image: "/src/assets/images/damen.png",
+    playStore:
+      "https://play.google.com/store/apps/details?id=net.damenapp.damen",
+    appStore:
+      "https://apps.apple.com/us/app/%D8%B6%D8%A7%D9%85%D9%86/id6477861699",
+    website: null,
+    current: false,
+  },
+  {
+    title: "100 Trillion",
+    company: "Tradinos",
+    date: "06/2024 - 08/2024",
+    description:
+      "Developed 100T, a mobile app tailored for collectors to explore and acquire rare banknotes, unique coins, and collectibles.Implemented a streamlined UI/UX to ensure effortless browsing and purchasing.Optimized performance for fast loading and seamless interactions.",
+    image: "/src/assets/images/trillion.png",
+    playStore: "https://play.google.com/store/apps/details?id=com.trillions",
+    appStore: "https://apps.apple.com/us/app/100trillions/id6677025906",
+    website: null,
+    current: false,
+  },
+  {
+    title: "Luca AI",
+    company: "Tradinos",
+    date: "09/2024 - 10/2024",
+    description:
+      "Built Luca AI, a financial AI assistant app designed to simplify expense tracking and financial management.Integrated an AI-powered chatbot, allowing users to track expenses effortlessly.Implemented customizable reports, enabling users to visualize spending habits and insights.",
+    image: "/src/assets/images/luca.png",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.tradinos.luca",
+    appStore: "https://apps.apple.com/us/app/luca-ai/id6468981767",
+    website: null,
+    current: false,
+  },
+  {
+    title: "Batra",
+    company: "Plansters",
+    date: "05/2024 - 06/2024",
+    description:
+      "Led the development of the Batra mobile application, a digital platform for one of Iraq's leading lighting solution providers.Engineered a user-friendly interface for browsing and purchasing indoor and outdoor lighting products, ensuring a seamless shopping experience. Integrated a robust product catalog and inventory management system to align with the company's global standards.",
+    image: "/src/assets/images/batra.png",
+    playStore:
+      "https://play.google.com/store/apps/details?id=plansters.plansters.com.batra",
+    appStore:
+      "https://apps.apple.com/us/app/batra-%D8%A8%D8%AA%D8%B1%D9%89/id1498040607",
+    website: null,
+    current: false,
+  },
+  {
+    title: "Al Aseel Keys",
+    company: "Plansters",
+    date: "01/2024 - 04/2024",
+    description:
+      "Designed and developed Al Aseel Keys a mobile application tailored for managing and purchasing high-quality security and access control solutions.Built a dynamic UI/UX to enhance customer interaction and simplify product navigation.Implemented real-time data synchronization and efficient backend solutions for optimal performance.",
+    image: "/src/assets/images/alassel.png",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.plansters.alaseel_app",
+    appStore:
+      "https://apps.apple.com/us/app/%D9%85%D9%81%D8%A7%D8%AA%D9%8A%D8%AD-%D8%A7%D9%84%D8%A3%D8%B5%D9%8A%D9%84/id6503984032",
+    website: null,
+    current: false,
+  },
+  {
+    title: "Zeraa Center",
+    company: "IXCoders",
+    date: "08/2023 - 10/2023",
+    description:
+      "Contributed to the Zeraa Center app, an e-commerce platform for agricultural equipment and accessories.Implemented a dynamic pricing system, allowing users to monitor price changes and trends.Ensured a smooth shopping experience, optimizing app performance and navigation.",
+    image: "/src/assets/images/zeraa.png",
+    playStore: "https://play.google.com/store/apps/details?id=com.zeraacenter",
+    appStore: null,
+    website: null,
+    current: false,
+  },
+  {
+    title: "Pazarin",
+    company: "IXCoders",
+    date: "05/2023 - 08/2023",
+    description:
+      "Helped develop an e-commerce platform, enabling users to list, promote, and sell products and services.Designed and integrated category-based filtering, allowing for effective product discovery.Focused on performance optimization for a smooth browsing experience.",
+    image: "/src/assets/images/pazar.png",
+    playStore: "https://play.google.com/store/apps/details?id=com.pazarin",
+    appStore: "https://apps.apple.com/us/app/pazarin/id6474499206",
+    website: null,
+    current: false,
+  },
+  {
+    title: "Compassty",
+    company: "We Can",
+    date: "01/2023 - 02/2023",
+    description:
+      "Led the development of Compassty, an app that allows users to create and share personalized addresses.Implemented features for categorizing and organizing locations, enhancing searchability.Ensured a user-friendly design, making address management effortless.",
+    image: "/src/assets/images/compasty.png",
+    playStore: null,
+    appStore: "https://apps.apple.com/us/app/compassty/id6448457251",
+    website: null,
+    current: false,
+  },
+  {
+    title: "RP",
+    company: "IXCoders",
+    date: "07/2023 - 09/2023",
+    description:
+      " Developed a service marketplace app, connecting users with contractors, architects, and engineers.Integrated a real-time chat system to facilitate direct communication between users and service providers.Focused on usability and accessibility, ensuring a seamless experience for all users.",
+    image: "/src/assets/images/rp.png",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.rpapp.onmrhost&hl=nl&gl=US",
+    appStore: null,
+    website: null,
+    current: false,
+  },
+  {
+    title: "eMenu",
+    company: "Plansters",
+    date: "12/2021 - 02/2022",
+    description:
+      "Developed eMenu, a mobile and web-based platform that enables users to browse digital restaurant menus.Created two versions (mobile app and website) for a cross-platform experience.Ensured a seamless and responsive UI, allowing for quick and intuitive navigation.",
+    image: "/src/assets/images/emenu.png",
+    playStore: null,
+    appStore: null,
+    website: "https://emenu.theemenu.com/#/home/37155f9b54",
+    current: false,
+  },
+];
+
+export const experiences: Experience[] = [
+  {
+    title: "System Analyst",
+    company: "Pharaon Group",
+    location: "Damascus, Syria",
+    period: "Apr 2025 - Present",
+    responsibilities: [
+      "Collaborating with clients to gather business needs and translate them into functional requirements",
+      "Creating detailed project documentation, including epics, user stories, and requirement specifications",
+      "Conducting system testing and validation to guarantee quality and performance before delivery",
+      "Coordinating with development teams to refine workflows and support smooth project execution",
+    ],
+    current: false,
+  },
+  {
+    title: "Mobile Development Team Leader",
+    company: "Ikoniks",
+    location: "Germany",
+    period: "Nov 2023 – Apr 2025",
+    responsibilities: [
+      "Led the development of two cutting-edge Flutter mobile applications",
+      "Managed a cross-functional team of 10+ developers, ensuring efficient workflow and Agile implementation",
+      "Optimized and enhanced existing software architecture to improve performance and scalability",
+      "Integrated bi-weekly Flutter updates to ensure stability and feature enhancements",
+    ],
+    current: false,
+  },
+  {
+    title: "Project-Based Contractor",
+    company: "Tradinos",
+    location: "Berlin, Germany",
+    period: "Jun 2024 – Aug 2024",
+    responsibilities: [
+      "Contributed to the development of 100 Trillion, a mobile app for currency exchange across the USA",
+      "Built and optimized the user interface, ensuring seamless functionality and enhanced user experience (UX)",
+      "Integrated key features to improve user experience and efficiency",
+    ],
+    current: false,
+  },
+  {
+    title: "Flutter Developer",
+    company: "IXCoders",
+    location: "Damascus, Syria",
+    period: "May 2023 – Oct 2023",
+    responsibilities: [
+      "Developed and deployed 3+ Flutter applications with a focus on scalability and performance",
+      "Collaborated with UI/UX designers to create intuitive and user-friendly app interfaces",
+      "Resolved technical issues and optimized app performance for improved user experience",
+    ],
+    current: false,
+  },
+  {
+    title: "Flutter Developer",
+    company: "We Can",
+    location: "Amman, Jordan",
+    period: "Nov 2022 – Mar 2023",
+    responsibilities: [
+      "Participated in the successful delivery of 3+ mobile applications, ensuring they met client specifications and deadlines",
+      "Worked in a multicultural team spanning 3 different countries, adapting to diverse work practices",
+    ],
+    current: false,
+  },
+  {
+    title: "Flutter Developer",
+    company: "Plansters",
+    location: "Damascus, Syria",
+    period: "Nov 2021 – Mar 2023",
+    responsibilities: [
+      "Designed and maintained high-quality Flutter applications from concept to deployment",
+      "Participated in all phases of the development lifecycle, ensuring Agile methodology implementation",
+      "Contributed to both front-end and back-end development tasks",
+    ],
+    current: false,
+  },
+];
+
+export const skillCategories: SkillCategory[] = [
+  {
+    title: "Mobile & Software Development",
+    icon: skillIcons.mobile,
+    skills: [
+      "Flutter Framework (Dio, Retrofit, Chopper, HTTP)",
+      "Hive, SQFLite, Background Services",
+      "Shared Preferences, Laravel Pusher",
+      "State Management (Provider, GetX, Bloc)",
+      "Cross-Platform Development (iOS & Android)",
+      "Dart, Java, C++, JavaScript, PHP, TypeScript, Python",
+    ],
+  },
+  {
+    title: "Web Development",
+    icon: skillIcons.web,
+    skills: [
+      "React",
+      "HTML & CSS",
+      "Responsive Design",
+      "Three.JS",
+      "NestJS",
+      "Laravel",
+    ],
+  },
+  {
+    title: "Database & Backend",
+    icon: skillIcons.database,
+    skills: [
+      "Firebase Firestore",
+      "SQL Server",
+      "Oracle",
+      "Big Data",
+      "Data Warehousing",
+      "REST API Development",
+    ],
+  },
+  {
+    title: "Development Tools",
+    icon: skillIcons.tools,
+    skills: [
+      "Git (GitHub, GitLab, Bitbucket)",
+      "CI/CD Pipelines",
+      "Agile (Scrum, Kanban)",
+      "Jira, ClickUp",
+      "Version Control",
+      "Code Reviews",
+    ],
+  },
+  {
+    title: "UI/UX & Design",
+    icon: skillIcons.design,
+    skills: [
+      "Figma",
+      "Adobe XD",
+      "Design Systems",
+      "Clean Architecture (MVC, MVVM)",
+      "Responsive Design",
+      "Legacy OpenGL",
+    ],
+  },
+  {
+    title: "Security & Authentication",
+    icon: skillIcons.security,
+    skills: [
+      "Firebase Authentication",
+      "OAuth (Google, Facebook)",
+      "JWT",
+      "REST API Authentication",
+      "Secure Development Practices",
+    ],
+  },
+];
+
+export const education = {
+  degree: {
+    title: "Bachelor's Degree in Information Technology Engineering",
+    institution: "Damascus University",
+    location: "Damascus, Syria",
+    period: "2019 – 2024",
+    gpa: "76%",
+    specialization: "Software Engineering",
+  },
+  certification: {
+    title: "Mobile App Development using Flutter",
+    institution: "Ousos Institute",
+    location: "Damascus, Syria",
+    period: "Jun 2021 – Sep 2021",
+  },
+  languages: [
+    { language: "Arabic", level: "Native" },
+    { language: "English", level: "Very Good" },
+  ],
+};
