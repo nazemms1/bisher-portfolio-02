@@ -34,15 +34,39 @@ export const navLinks: NavLink[] = [
 
 export const projects: Project[] = [
   {
-    title: "Pyramind",
-    company: "Pharaon",
-    date: "04/2025 - Present",
+    title: "ASKONnect",
+    company: "Pharaon Group",
+    date: "01/2026 - Present",
     description:
       "Led the analysis and planning of the project, defining clear requirements, user stories, and acceptance criteria to align development with business goals Managed the development process using the Scrum framework, facilitating sprint planning, daily stand-ups, reviews, and retrospectives to ensure continuous progress and team collaboration.Coordinated cross-functional teams and stakeholders, tracking progress through agile tools and ensuring timely delivery of high-quality features..",
     image: "/src/assets/images/pyramind.png",
     playStore: null,
     appStore: null,
     website: null,
+    current: true,
+  },
+  {
+    title: "ASKON Syria Website",
+    company: "Pharaon Group",
+    date: "01/2026",
+    description:
+      "Led the analysis and planning of the project, defining clear requirements, user stories, and acceptance criteria to align development with business goals Managed the development process using the Scrum framework, facilitating sprint planning, daily stand-ups, reviews, and retrospectives to ensure continuous progress and team collaboration.Coordinated cross-functional teams and stakeholders, tracking progress through agile tools and ensuring timely delivery of high-quality features..",
+    image: "/src/assets/images/pyramind.png",
+    playStore: null,
+    appStore: null,
+    website: "https://www.askon-syria.com/en#home",
+    current: false,
+  },
+  {
+    title: "Pyramind",
+    company: "Pharaon Group",
+    date: "04/2025 - Present",
+    description:
+      "Led the analysis and planning of the project, defining clear requirements, user stories, and acceptance criteria to align development with business goals Managed the development process using the Scrum framework, facilitating sprint planning, daily stand-ups, reviews, and retrospectives to ensure continuous progress and team collaboration.Coordinated cross-functional teams and stakeholders, tracking progress through agile tools and ensuring timely delivery of high-quality features..",
+    image: "/src/assets/images/pyramind.png",
+    playStore: null,
+    appStore: null,
+    website: "https://pyramind.pharaon-group.com/on-Board",
     current: true,
   },
   {
@@ -177,15 +201,20 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
   {
-    title: "System Analyst",
+    title: "Product Owner | Mobile Team Leader",
     company: "Pharaon Group",
     location: "Damascus, Syria",
     period: "Apr 2025 - Present",
     responsibilities: [
-      "Collaborating with clients to gather business needs and translate them into functional requirements",
-      "Creating detailed project documentation, including epics, user stories, and requirement specifications",
-      "Conducting system testing and validation to guarantee quality and performance before delivery",
-      "Coordinating with development teams to refine workflows and support smooth project execution",
+      "Own and manage ASKON Syria, ASKONnect, and Pyramind digital products, driving product vision, roadmap, and end-to-end delivery.",
+      "Define and prioritize the product backlog, write detailed user stories and acceptance criteria, and maintain comprehensive product documentation.",
+      "Lead sprint planning, task assignment, timeline tracking, and user acceptance testing (UAT) to ensure high-quality, on-time releases.",
+      "Conduct stakeholder and client meetings to gather requirements, present progress updates, and ensure alignment on scope, expectations, and priorities.",
+      "Contribute to project estimation, pricing, and delivery planning to balance business goals with technical feasibility.",
+      "Coordinate cross-functional teams to align product strategy with operational and user needs.",
+      "Develop and maintain cross-platform mobile applications and implement a unified structure adopted across all company mobile apps.",
+      "Establish architecture standards, ensure code quality, and implement best practices for mobile development.",
+      "Create and refine workflows, processes, and project documentation to support smooth execution and continuous improvement."
     ],
     current: false,
   },
