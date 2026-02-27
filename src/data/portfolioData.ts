@@ -9,11 +9,11 @@ import { skillIcons } from "../constants/icons";
 
 export const personalInfo: PersonalInfo = {
   name: "BISHER MUHAMMAD ZIAD ALHASANI ALJAZAERI",
-  title: "Flutter Developer • Software Engineer",
+  title: "Product Owner • Flutter Developer • Software Engineer",
   bio: [
-    "Results-driven Software Engineer and Flutter Developer with over 3 years of experience in building high-quality cross-platform mobile applications and web solutions.",
-    "Proficient in Flutter, Dart, React, and API integrations, with expertise in state management, UI/UX, and clean architecture. Adept at leading cross-functional teams, optimizing app performance, and delivering scalable, high-quality solutions.",
-    "Passionate about building user-centric applications and leveraging Agile methodologies to enhance development efficiency.",
+    "Product Owner and Flutter Developer with 4+ years of experience building and scaling digital products across mobile and web platforms.",
+    "Lead product planning, backlog structuring, release coordination, and stakeholder communication, while actively contributing to cross-platform mobile development using Flutter and Dart.",
+    "Known for turning complex business requirements into structured execution plans and maintainable codebases, bridging product direction with hands-on technical implementation."
   ],
   email: "bisher.hasani@gmail.com",
   phone: "+963 939202488",
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     company: "Pharaon Group",
     date: "01/2026 - Present",
     description:
-      "Led the analysis and planning of the project, defining clear requirements, user stories, and acceptance criteria to align development with business goals Managed the development process using the Scrum framework, facilitating sprint planning, daily stand-ups, reviews, and retrospectives to ensure continuous progress and team collaboration.Coordinated cross-functional teams and stakeholders, tracking progress through agile tools and ensuring timely delivery of high-quality features..",
+      "Project Manager and Lead System Analyst for a high-security B2B marketplace and networking hub for the ASKON Businessmen Association. Authored the full SRS and designed the trade lifecycle from product discovery to secure Escrow settlement. Managed the development of a unique 'Trade Request' system, AI-powered multilingual chat, and a 'Fair-Discovery' engine for member exposure. Orchestrated cross-functional teams using Scrum to deliver a professional digital ecosystem that replaces informal trade communication with a structured, secure commerce platform.",
     image: "/src/assets/images/pyramind.png",
     playStore: null,
     appStore: null,
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     company: "Pharaon Group",
     date: "01/2026",
     description:
-      "Led the analysis and planning of the project, defining clear requirements, user stories, and acceptance criteria to align development with business goals Managed the development process using the Scrum framework, facilitating sprint planning, daily stand-ups, reviews, and retrospectives to ensure continuous progress and team collaboration.Coordinated cross-functional teams and stakeholders, tracking progress through agile tools and ensuring timely delivery of high-quality features..",
+      "Managed the design and deployment of the official landing page for ASKON Syria. As Project Manager, I defined the requirements for professional branding and multilingual accessibility (Arabic, English, Turkish) to create a clear digital entry point for the association. This project focused on providing a streamlined public interface that introduces members to the association's vision and guides them toward the secure B2B networking platform.",
     image: "/src/assets/images/pyramind.png",
     playStore: null,
     appStore: null,
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     company: "Pharaon Group",
     date: "04/2025 - Present",
     description:
-      "Led the analysis and planning of the project, defining clear requirements, user stories, and acceptance criteria to align development with business goals Managed the development process using the Scrum framework, facilitating sprint planning, daily stand-ups, reviews, and retrospectives to ensure continuous progress and team collaboration.Coordinated cross-functional teams and stakeholders, tracking progress through agile tools and ensuring timely delivery of high-quality features..",
+      "Led the analysis and planning of the project, defining clear requirements, user stories, and acceptance criteria to align development with business goals. Managed the development process using the Scrum framework, facilitating sprint planning, daily stand-ups, reviews, and retrospectives to ensure continuous progress and team collaboration. Coordinated cross-functional teams and stakeholders, tracking progress through agile tools and ensuring timely delivery of high-quality features..",
     image: "/src/assets/images/pyramind.png",
     playStore: null,
     appStore: null,
@@ -282,6 +282,19 @@ export const experiences: Experience[] = [
 
 export const skillCategories: SkillCategory[] = [
   {
+    title: "Project Management & Product Ownership",
+    icon: skillIcons.management,
+    skills: [
+      "Product Vision & Roadmap",
+      "Backlog Prioritization",
+      "User Stories & Acceptance Criteria",
+      "Agile Methodologies (Scrum, Kanban)",
+      "Stakeholder Management",
+      "UAT & Quality Assurance",
+      "Project Estimation & Planning",
+    ],
+  },
+  {
     title: "Mobile & Software Development",
     icon: skillIcons.mobile,
     skills: [
@@ -352,6 +365,7 @@ export const skillCategories: SkillCategory[] = [
       "Secure Development Practices",
     ],
   },
+
 ];
 
 export const education = {

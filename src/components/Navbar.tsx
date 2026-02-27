@@ -30,16 +30,16 @@ export function Navbar() {
   useEffect(() => {
     setIsScrolled(scroll.y > 50);
 
-     const sections = links.map(link => link.href.substring(1)).filter(id => id !== 'home');
+    const sections = links.map(link => link.href.substring(1)).filter(id => id !== 'home');
 
     let foundSection = false;
 
-     for (let i = sections.length - 1; i >= 0; i--) {
+    for (let i = sections.length - 1; i >= 0; i--) {
       const section = sections[i];
       const element = document.getElementById(section);
       if (element) {
         const rect = element.getBoundingClientRect();
-         if (rect.top <= window.innerHeight / 2) {
+        if (rect.top <= window.innerHeight / 2) {
           const label = links.find(link => link.href === `#${section}`)?.label;
           if (label) {
             setActive(label);
@@ -50,7 +50,7 @@ export function Navbar() {
       }
     }
 
-     if (!foundSection && scroll.y < 200) {
+    if (!foundSection && scroll.y < 200) {
       setActive('Home');
     }
   }, [scroll.y]);
@@ -59,7 +59,7 @@ export function Navbar() {
     setActive(label);
     close();
 
-     const element = document.querySelector(href);
+    const element = document.querySelector(href);
     if (element) {
       const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 70;
       window.scrollTo({
@@ -90,7 +90,7 @@ export function Navbar() {
             transition: 'all 0.3s ease',
           }}
         >
-           <motion.div
+          <motion.div
             style={{
               position: 'absolute',
               top: 0,
@@ -111,7 +111,7 @@ export function Navbar() {
                 transition: 'height 0.3s ease',
               }}
             >
-               <motion.div
+              <motion.div
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -131,11 +131,11 @@ export function Navbar() {
                     handleClick('Home', '#home');
                   }}
                 >
-                  Bisher Alhasani
+                  Bisher AlHasani
                 </Anchor>
               </motion.div>
 
-               <Group gap="md" visibleFrom="sm">
+              <Group gap="md" visibleFrom="sm">
                 {links.map((link, index) => (
                   <motion.div
                     key={link.label}
@@ -183,7 +183,7 @@ export function Navbar() {
                 ))}
               </Group>
 
-               <motion.div
+              <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -200,7 +200,7 @@ export function Navbar() {
         </Box>
       </motion.div>
 
-       <Drawer
+      <Drawer
         opened={opened}
         onClose={close}
         size="100%"

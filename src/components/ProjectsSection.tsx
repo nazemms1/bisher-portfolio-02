@@ -83,7 +83,7 @@ export function ProjectsSection() {
               margin: "0 auto 3rem",
             }}
           >
-            A showcase of mobile applications I've built, from concept to
+            A showcase of projects I've built, from concept to
             deployment
           </Text>
         </motion.div>

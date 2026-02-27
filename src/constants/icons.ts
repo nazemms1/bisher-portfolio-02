@@ -28,6 +28,7 @@ export const skillIcons = {
   tools: IconCode,
   design: IconBrandJavascript,
   security: IconBrandGit,
+  management: IconBriefcase,
   flutter: IconBrandFlutter,
   react: IconBrandReact,
   javascript: IconBrandJavascript,
