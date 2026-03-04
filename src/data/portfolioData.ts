@@ -4,6 +4,7 @@ import type {
   SkillCategory,
   PersonalInfo,
   NavLink,
+  Recommendation,
 } from "../types/portfolio.types";
 import { skillIcons } from "../constants/icons";
 
@@ -25,9 +26,10 @@ export const personalInfo: PersonalInfo = {
 
 export const navLinks: NavLink[] = [
   { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Recommendations", href: "#recommendations" },
+  { label: "Skills", href: "#skills" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
@@ -366,6 +368,17 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
 
+];
+
+export const recommendations: Recommendation[] = [
+  {
+    name: "Judy Alqabbani",
+    role: "Project Manager at Pharaon Group",
+    expertise: "Project Management",
+    period: "July 2025 – Present",
+    message:
+      "During our collaboration on the Pyramind project, I had the pleasure of overseeing Bisher, and I can state with confidence that he is a superb product owner and engineer. He is quick, very talented, and very proactive. He takes the initiative without waiting for guidance and never lets obstacles stand in the way of advancement. Rather than claiming that something is challenging, he always finds a solution. He doesn't need micromanagement, is adaptable, and is a pleasure to work with. He is quick to grasp requirements, meticulous, and regularly completes excellent work on schedule. His dedication, work ethic, and sense of ownership are genuinely remarkable. He would be a great asset to any team.",
+  },
 ];
 
 export const education = {

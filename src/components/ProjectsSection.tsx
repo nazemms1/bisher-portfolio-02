@@ -88,17 +88,19 @@ export function ProjectsSection() {
           </Text>
         </motion.div>
 
-        <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }} spacing="xl">
+        <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }} spacing="xl" style={{ alignItems: "stretch" }}>
           {projects.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              style={{ height: "100%" }}
             >
               <motion.div
                 whileHover={{ y: -10 }}
                 transition={{ type: "spring" as const, stiffness: 300 }}
+                style={{ height: "100%" }}
               >
                 <Card
                   shadow="md"

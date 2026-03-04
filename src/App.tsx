@@ -7,6 +7,7 @@ import { ExperienceSection } from "./components/ExperienceSection";
 import { ProjectsSection } from "./components/ProjectsSection";
 import { SkillsSection } from "./components/SkillsSection";
 import { EducationSection } from "./components/EducationSection";
+import { RecommendationsSection } from "./components/RecommendationsSection";
 import { ContactSection } from "./components/ContactSection";
 import { BackToTop } from "./components/BackToTop";
 import { LoadingScreen } from "./components/LoadingScreen";
@@ -31,6 +32,7 @@ function App() {
         <AboutSection />
         <ExperienceSection />
         <ProjectsSection />
+        <RecommendationsSection />
         <SkillsSection />
         <EducationSection />
         <ContactSection />

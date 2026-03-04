@@ -53,6 +53,14 @@ export interface NavLink {
   href: string;
 }
 
+export interface Recommendation {
+  name: string;
+  role: string;
+  expertise: string;
+  period: string;
+  message: string;
+}
+
 export interface SocialLink {
   name: string;
   url: string;

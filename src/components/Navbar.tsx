@@ -8,6 +8,7 @@ const links = [
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Recommendations', href: '#recommendations' },
   { label: 'Skills', href: '#skills' },
   { label: 'Education', href: '#education' },
   { label: 'Contact', href: '#contact' },
@@ -64,7 +65,7 @@ export function Navbar() {
       const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 70;
       window.scrollTo({
         top: offsetTop,
-        behavior: 'smooth',
+        behavior: 'instant',
       });
     }
   };
