@@ -59,6 +59,7 @@ export interface Recommendation {
   expertise: string;
   period: string;
   message: string;
+  linkedin?: string;
 }
 
 export interface SocialLink {

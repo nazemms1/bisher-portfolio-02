@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Container, Title, Text, Box, useMantineTheme } from "@mantine/core";
+import { Container, Title, Text, Box, useMantineTheme, Anchor } from "@mantine/core";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { recommendations } from "../data/portfolioData";
-import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
+import { IconChevronLeft, IconChevronRight, IconBrandLinkedin } from "@tabler/icons-react";
 
 export function RecommendationsSection() {
   const theme = useMantineTheme();
@@ -208,6 +208,31 @@ export function RecommendationsSection() {
                       >
                         {rec.period}
                       </Text>
+                      {rec.linkedin && (
+                        <Anchor
+                          href={rec.linkedin}
+                          target="_blank"
+                          style={{
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: "0.3rem",
+                            marginTop: "0.4rem",
+                            color: theme.colors.forestLight[0],
+                            fontSize: "0.8rem",
+                            fontWeight: 500,
+                            textDecoration: "none",
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.color = theme.colors.wheatMid[0];
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.color = theme.colors.forestLight[0];
+                          }}
+                        >
+                          <IconBrandLinkedin size={14} />
+                          LinkedIn
+                        </Anchor>
+                      )}
                     </Box>
 
                     <Box style={{ marginLeft: "auto" }}>
