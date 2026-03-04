@@ -397,7 +397,7 @@ export const education = {
     location: "Damascus, Syria",
     period: "Jun 2021 – Sep 2021",
   },
-  languages: [
+  languages: [ 
     { language: "Arabic", level: "Native" },
     { language: "English", level: "Very Good" },
   ],
