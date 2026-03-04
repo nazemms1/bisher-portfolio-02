@@ -149,7 +149,7 @@ export function HeroSection() {
                 >
                   <Button
                     component="a"
-                    href={personalInfo.resumePath}
+                    href={`${import.meta.env.BASE_URL}${personalInfo.resumePath}`}
                     download="Bisher_Alhasani_CV.pdf"
                     size="lg"
                     leftSection={<IconDownload size={20} />}

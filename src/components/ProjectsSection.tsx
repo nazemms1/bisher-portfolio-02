@@ -138,7 +138,7 @@ export function ProjectsSection() {
                         style={{ width: "100%", height: "100%" }}
                       >
                         <Image
-                          src={project.image}
+                          src={`${import.meta.env.BASE_URL}${project.image}`}
                           alt={project.title}
                           height={200}
                           fit="cover"
