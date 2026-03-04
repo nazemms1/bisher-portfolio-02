@@ -97,8 +97,8 @@ export function ProjectsSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <motion.div
-                whileHover={{ y: -10 }}
-                transition={{ type: "spring" as const, stiffness: 300 }}
+                whileHover={{ y: -15, scale: 1.02 }}
+                transition={{ type: "spring" as const, stiffness: 400, damping: 10 }}
               >
                 <Card
                   shadow="md"
@@ -106,7 +106,6 @@ export function ProjectsSection() {
                   radius="md"
                   style={{
                     backgroundColor: theme.white,
-                    border: `2px solid ${theme.colors.forestLight[0]}`,
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
@@ -116,13 +115,9 @@ export function ProjectsSection() {
                   onMouseEnter={(e) => {
                     e.currentTarget.style.boxShadow =
                       "0 12px 28px rgba(0,0,0,0.15)";
-                    e.currentTarget.style.borderColor =
-                      theme.colors.forestMid[0];
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.boxShadow = "";
-                    e.currentTarget.style.borderColor =
-                      theme.colors.forestLight[0];
                   }}
                 >
                   <Card.Section>

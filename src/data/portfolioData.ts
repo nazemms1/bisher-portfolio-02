@@ -39,10 +39,10 @@ export const projects: Project[] = [
     date: "01/2026 - Present",
     description:
       "Project Manager and Lead System Analyst for a high-security B2B marketplace and networking hub for the ASKON Businessmen Association. Authored the full SRS and designed the trade lifecycle from product discovery to secure Escrow settlement. Managed the development of a unique 'Trade Request' system, AI-powered multilingual chat, and a 'Fair-Discovery' engine for member exposure. Orchestrated cross-functional teams using Scrum to deliver a professional digital ecosystem that replaces informal trade communication with a structured, secure commerce platform.",
-    image: "/src/assets/images/pyramind.png",
+    image: "/src/assets/images/askonnect.png",
     playStore: null,
     appStore: null,
-    website: null,
+    website: "https://dev-front-askonnect.ultrawares.com/",
     current: true,
   },
   {
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     date: "01/2026",
     description:
       "Managed the design and deployment of the official landing page for ASKON Syria. As Project Manager, I defined the requirements for professional branding and multilingual accessibility (Arabic, English, Turkish) to create a clear digital entry point for the association. This project focused on providing a streamlined public interface that introduces members to the association's vision and guides them toward the secure B2B networking platform.",
-    image: "/src/assets/images/pyramind.png",
+    image: "/src/assets/images/askon.png",
     playStore: null,
     appStore: null,
     website: "https://www.askon-syria.com/en#home",
