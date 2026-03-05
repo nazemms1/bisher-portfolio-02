@@ -108,7 +108,7 @@ export function HeroSection() {
                 letterSpacing: "0.1em",
               }}
             >
-              <GlitchText text={personalInfo.title} />
+              <GlitchText texts={["Product Owner", "Flutter Developer", "Software Engineer"]} />
             </Text>
           </motion.div>
 
